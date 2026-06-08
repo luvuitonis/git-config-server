@@ -4,12 +4,11 @@ server:
 # Swagger UI
 springdoc:
   swagger-ui:
-    path: /swagger-ui.html
-    operationsSorter: method
-    tagsSorter: alpha
-    tryItOutEnabled: true
+    enabled: true
+    path: /docs
+    use-root-path: false
   api-docs:
-    path: /v3/api-docs
+    path: /api-docs
 
 # Ambiente de Prod
 spring:
