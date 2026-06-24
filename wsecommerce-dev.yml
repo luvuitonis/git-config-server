@@ -16,6 +16,7 @@ spring:
   datasource:
     #url: jdbc:h2:mem:ecommercedb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     #driverClassName: org.h2.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://db-ecom-pr.cot284mke3iz.us-east-1.rds.amazonaws.com/ecommerce
     username: ecpr
     password: #9669Dbec
