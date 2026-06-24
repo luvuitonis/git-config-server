@@ -19,7 +19,7 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://db-ecom-pr.cot284mke3iz.us-east-1.rds.amazonaws.com/ecommerce
     username: ecpr
-    password: #9669Dbec
+    password: "#9669Dbec"
   jpa:
     hibernate:
       ddl-auto: update
