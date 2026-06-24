@@ -14,14 +14,18 @@ springdoc:
 # Ambiente de Dev
 spring:
   datasource:
-    url: jdbc:h2:mem:ecommercedb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    driverClassName: org.h2.Driver
-    username: sa
-    password:
+    #url: jdbc:h2:mem:ecommercedb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    #driverClassName: org.h2.Driver
+    url: jdbc:mysql://db-ecom-pr.cot284mke3iz.us-east-1.rds.amazonaws.com/ecommerce
+    username: ecpr
+    password: #9669Dbec
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
   h2:
     console:
       enabled: true
